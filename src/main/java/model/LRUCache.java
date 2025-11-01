@@ -14,7 +14,7 @@ public class LRUCache {
         this.cacheMap=new HashMap<>();
         this.head=new Node(-1,-1);
         this.tail=new Node(-1,-1);
-        this.head.next=tail;
+        this.head.next=this.tail;
         this.tail.prev=this.head;
     }
 
